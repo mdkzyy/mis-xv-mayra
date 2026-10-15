@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mis XV | Mayra</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<!-- MÚSICA -->
+<audio id="musicaXV" loop>
+    <source src="xv.mp3" type="audio/mpeg">
+</audio>
+
+<button id="botonMusica" class="boton-musica" aria-label="Activar música">
+    ♫
+</button>
+
+<body>
+
+    <!-- PORTADA -->
+    <section id="portada" class="pantalla activa">
+
+        <div class="monograma">
+            <span>M</span>
+        </div>
+
+        <p class="subtitulo">Mis XV</p>
+
+        <h1 class="titulo-xv">XV AÑOS</h1>
+
+        <h2 class="nombre">Mayra</h2>
+
+        <div class="fecha">
+            <span>19</span>
+            |
+            DICIEMBRE
+            |
+            <span>2026</span>
+        </div>
+
+        <div class="corazon">♡</div>
+
+        <p class="frase">
+            Con amor eterno te he amado, <br>
+            por tanto te prolongué mi misericordia
+            Jeremías 3:13
+        </p>
+
+        <button class="boton-principal" id="entrar">
+            INGRESA A TU INVITACIÓN
+        </button>
+
+    </section>
+
+
+    <!-- CÓDIGO DE INVITACIÓN -->
+    <section id="codigo" class="pantalla">
+
+        <div class="monograma">
+            <span>M</span>
+        </div>
+
+        <p class="subtitulo">Bienvenido/a</p>
+
+        <h1 class="titulo-codigo">
+            Ingresa tu código
+        </h1>
+
+        <p class="texto-codigo">
+            Escribe el código único que recibiste<br>
+            para acceder a tu invitación.
+        </p>
+
+        <input
+            type="text"
+            id="codigoInvitacion"
+            class="campo-codigo"
+            placeholder="Escribe tu código aquí"
+            autocomplete="off"
+        >
+
+        <button class="boton-principal" id="continuar">
+            INGRESAR
+        </button>
+
+        <button class="boton-regresar" id="regresar">
+            ← Volver
+        </button>
+
+    </section>
+
+
+    <!-- PANTALLA DE CARGANDO -->
+    <section id="cargando" class="pantalla">
+
+        <div class="monograma">
+            <span>M</span>
+        </div>
+
+        <p class="subtitulo">
+            Código válido
+        </p>
+
+        <h1 class="titulo-codigo">
+            Preparando tu invitación...
+        </h1>
+
+        <div class="loader"></div>
+
+        <p class="texto-cargando">
+            Por favor espera unos segundos
+        </p>
+
+    </section>
+
+
+    <!-- INVITACIÓN PERSONALIZADA -->
+    <section id="invitacion" class="pantalla">
+
+        <div class="monograma">
+            <span>M</span>
+        </div>
+
+        <p class="subtitulo">
+            La familia Zetina Mendoza
+        </p>
+
+        <h1 class="titulo-invitacion">
+            se complace en invitarle a los
+        </h1>
+
+        <h2 class="nombre-invitado">
+            XV años de su hija<br>
+            Mayra Daniela
+        </h2>
+
+        <div class="separador"></div>
+
+        <div class="datos-pase">
+
+            <p>
+                <span>INVITADO</span>
+                <strong id="nombreInvitado">
+                    Invitado especial
+                </strong>
+            </p>
+
+            <p>
+                <span>PASES</span>
+                <strong id="numeroPases">
+                    1
+                </strong>
+            </p>
+
+        </div>
+
+        <p class="frase-invitacion">
+            Será un honor contar con su presencia<br>
+            en este día tan especial.
+        </p>
+
+        <button class="boton-principal" id="verMisa">
+            CONTINUAR
+        </button>
+
+    </section>
+
+
+    <!-- PANTALLA DE LA MISA -->
+    <section id="misa" class="pantalla">
+
+        <div class="monograma">
+            <span>M</span>
+        </div>
+
+        <p class="subtitulo">
+            Ceremonia religiosa
+        </p>
+
+        <h1 class="titulo-misa">
+            Daremos gracias a Dios
+        </h1>
+
+        <p class="texto-misa">
+            por su vida en
+        </p>
+
+        <h2 class="iglesia-misa">
+            Parroquia de San Juan<br>
+            Apóstol y Evangelista
+        </h2>
+
+        <div class="separador"></div>
+
+        <div class="datos-misa">
+
+            <p>
+                <span>FECHA</span>
+                <strong>19 de diciembre de 2026</strong>
+            </p>
+
+            <p>
+                <span>HORA</span>
+                <strong>12:30 p. m.</strong>
+            </p>
+
+            <p>
+                <span>DIRECCIÓN</span>
+                <strong>
+                    Sinaloa No. 1<br>
+                    Col. Chapultepec<br>
+                    Cuernavaca, Morelos
+                </strong>
+            </p>
+
+        </div>
+
+        <a
+            class="boton-principal boton-maps"
+            href="https://maps.app.goo.gl/RrBbGiNnNgJNYkbw8?g_st=ac"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            📍 VER UBICACIÓN
+        </a>
+
+        <button class="boton-principal" id="verRecepcion">
+            CONTINUAR
+        </button>
+
+    </section>
+
+
+    <!-- RECEPCIÓN -->
+    <section id="recepcion" class="pantalla">
+
+        <div class="monograma">
+            <span>M</span>
+        </div>
+
+        <p class="subtitulo">
+            La celebración continúa...
+        </p>
+
+        <h1 class="titulo-invitacion">
+            Recepción
+        </h1>
+
+        <h2 class="nombre-invitado">
+            Jardín Galeana
+        </h2>
+
+        <div class="separador"></div>
+
+        <div class="datos-pase">
+
+            <p>
+                <span>DIRECCIÓN</span>
+                <strong>
+                    Calle Galeana #100A<br>
+                    Col. Las Palmas
+                </strong>
+            </p>
+
+            <p>
+                <span>HORA</span>
+                <strong>
+                    3:00 PM
+                </strong>
+            </p>
+
+        </div>
+
+        <p class="frase-invitacion">
+            Será un honor continuar esta celebración<br>
+            contigo. ✨
+        </p>
+
+        <a
+            class="boton-principal boton-maps"
+            href="https://maps.app.goo.gl/wMg4FbNYy1rDdDAU6"
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            📍 VER UBICACIÓN
+        </a>
+
+        <button class="boton-principal" id="verDresscode">
+            CONTINUAR
+        </button>
+
+        <button class="boton-regresar" id="volverMisa">
+            ← Volver
+        </button>
+
+    </section>
+
+
+    <!-- DRESS CODE -->
+    <section id="dresscode" class="pantalla">
+
+        <div class="monograma">
+            <span>M</span>
+        </div>
+
+        <p class="subtitulo">
+            Código de vestimenta
+        </p>
+
+        <h1 class="titulo-invitacion">
+            Dress Code
+        </h1>
+
+        <p class="frase-invitacion">
+            Para esta ocasión tan especial,<br>
+            te pedimos respetar la siguiente indicación:
+        </p>
+
+        <div class="dresscode-box">
+
+            <h2 class="nombre-invitado">
+                Colores reservados
+            </h2>
+
+            <p>
+                Evita utilizar colores similares<br>
+                al vestido de la quinceañera.
+            </p>
+
+            <div class="colores-prohibidos">
+
+                <div class="color-item">
+                    <span class="color-circulo champagne"></span>
+                    <strong>Champagne</strong>
+                </div>
+
+                <div class="color-item">
+                    <span class="color-circulo beige"></span>
+                    <strong>Beige</strong>
+                </div>
+
+                <div class="color-item">
+                    <span class="color-circulo dorado"></span>
+                    <strong>Dorado</strong>
+                </div>
+
+            </div>
+
+            <p class="dresscode-nota">
+                Estos tonos quedan reservados para la quinceañera. ✨
+            </p>
+
+        </div>
+
+        <!-- DRESS CODE → ITINERARIO -->
+        <button class="boton-principal" id="verItinerario">
+            CONTINUAR
+        </button>
+
+        <button class="boton-regresar" id="volverRecepcion">
+            ← Volver
+        </button>
+
+    </section>
+
+
+    <!-- ITINERARIO -->
+    <section id="itinerario" class="pantalla">
+
+        <div class="monograma">
+            <span>M</span>
+        </div>
+
+        <p class="subtitulo">
+            Un día para recordar
+        </p>
+
+        <h1 class="titulo-invitacion">
+            Itinerario
+        </h1>
+
+        <p class="frase-invitacion">
+            Acompáñanos en cada momento<br>
+            de esta celebración tan especial.
+        </p>
+
+        <div class="timeline">
+
+            <!-- MISA -->
+            <div class="evento">
+
+                <div class="evento-hora">
+                    12:30 p. m.
+                </div>
+
+                <div class="evento-icono">
+                    ⛪
+                </div>
+
+                <div class="evento-contenido">
+                    <h2>Misa</h2>
+
+                    <p>
+                        Ceremonia religiosa
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!-- ACCESO AL JARDÍN -->
+            <div class="evento">
+
+                <div class="evento-hora">
+                    3:00 p. m.
+                </div>
+
+                <div class="evento-icono">
+                    🌿
+                </div>
+
+                <div class="evento-contenido">
+                    <h2>Acceso al Jardín</h2>
+
+                    <p>
+                        Recepción en Jardín Galeana
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!-- COMIDA -->
+            <div class="evento">
+
+                <div class="evento-hora">
+                    3:30 p. m.
+                </div>
+
+                <div class="evento-icono">
+                    🍽️
+                </div>
+
+                <div class="evento-contenido">
+                    <h2>Comemos juntos</h2>
+
+                    <p>
+                        Compartamos este momento
+                    </p>
+                </div>
+
+            </div>
+
+
+            <!-- SORPRESAS -->
+            <div class="evento">
+
+                <div class="evento-hora">
+                    Después
+                </div>
+
+                <div class="evento-icono">
+                    ✨
+                </div>
+
+                <div class="evento-contenido">
+                    <h2>Tarde de sorpresas</h2>
+
+                    <p>
+                        ¡Lo mejor está por comenzar!
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ITINERARIO → CONFIRMACIÓN -->
+        <button class="boton-principal" id="verConfirmacion">
+            CONTINUAR
+        </button>
+
+        <button class="boton-regresar" id="volverDresscode">
+            ← Volver
+        </button>
+
+    </section>
+<!-- CONFIRMACIÓN / RSVP -->
+<section id="confirmacion" class="pantalla">
+
+    <div class="monograma">
+        <span>M</span>
+    </div>
+
+    <p class="subtitulo">
+        Tu presencia es muy especial
+    </p>
+
+    <h1 class="titulo-invitacion">
+        ¿Nos acompañas?
+    </h1>
+
+    <div class="separador"></div>
+
+    <p class="frase-invitacion">
+        Nos encantaría compartir<br>
+        este día tan especial contigo.
+    </p>
+
+    <div class="rsvp-box">
+
+        <button class="opcion-rsvp" id="asistire">
+            <span class="rsvp-icono">♡</span>
+
+            <span>
+                <strong>Sí, asistiré</strong>
+                <small>¡Será un honor acompañarte!</small>
+            </span>
+        </button>
+
+
+        <button class="opcion-rsvp" id="noAsistire">
+            <span class="rsvp-icono">♡</span>
+
+            <span>
+                <strong>No podré asistir</strong>
+                <small>Gracias por avisarnos.</small>
+            </span>
+        </button>
+
+    </div>
+
+    <p id="mensajeRsvp" class="mensaje-rsvp"></p>
+
+    <button class="boton-principal" id="confirmarAsistencia">
+        CONFIRMAR ASISTENCIA
+    </button>
+
+    <button class="boton-regresar" id="volverItinerario">
+        ← Volver
+    </button>
+
+</section>
+<!-- PASE DIGITAL -->
+<section id="pase" class="pantalla">
+
+    <div class="monograma">
+        <span>M</span>
+    </div>
+
+    <p class="subtitulo">
+        Tu acceso a la celebración
+    </p>
+
+    <h1 class="titulo-invitacion">
+        Pase Digital
+    </h1>
+
+    <div class="ticket">
+
+        <div class="ticket-top">
+
+            <p class="ticket-small">
+                MIS XV
+            </p>
+
+            <h2>
+                Mayra Daniela
+            </h2>
+
+            <p class="ticket-fecha">
+                19 · DICIEMBRE · 2026
+            </p>
+
+        </div>
+
+
+        <div class="ticket-separador">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+
+        <div class="ticket-info">
+
+            <div>
+                <span>INVITADO</span>
+                <strong id="nombrePase">
+                    Invitado especial
+                </strong>
+            </div>
+
+            <div>
+                <span>PASES</span>
+                <strong id="pasesPase">
+                    1
+                </strong>
+            </div>
+
+            <div>
+                <span>TIPO DE PASE</span>
+                <strong id="tipoPase">
+                    Invitado
+                </strong>
+            </div>
+
+            <div>
+                <span>CÓDIGO</span>
+                <strong id="codigoPase">
+                    ------
+                </strong>
+            </div>
+
+        </div>
+
+
+        <div class="ticket-footer">
+
+            <div class="codigo-barras">
+                ||| || |||| | ||| || ||||
+            </div>
+
+            <p>
+                Presenta este pase al ingresar
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <button class="boton-principal" id="descargarPase">
+        🎫 GUARDAR MI PASE
+    </button>
+
+    <button class="boton-principal" id="verCuentaRegresiva">
+        CONTINUAR
+    </button>
+
+    <button class="boton-regresar" id="volverConfirmacion">
+        ← Volver
+    </button>
+
+</section>
+<!-- CUENTA REGRESIVA -->
+<section id="cuentaRegresiva" class="pantalla">
+
+    <div class="monograma">
+        <span>M</span>
+    </div>
+
+    <p class="subtitulo">
+        Cada vez falta menos...
+    </p>
+
+    <h1 class="titulo-invitacion">
+        Mis XV
+    </h1>
+
+    <p class="frase-invitacion">
+        19 de diciembre de 2026<br>
+        El gran día está por llegar. ✨
+    </p>
+
+    <div class="contador">
+
+        <div class="contador-item">
+            <strong id="dias">00</strong>
+            <span>DÍAS</span>
+        </div>
+
+        <div class="contador-item">
+            <strong id="horas">00</strong>
+            <span>HORAS</span>
+        </div>
+
+        <div class="contador-item">
+            <strong id="minutos">00</strong>
+            <span>MINUTOS</span>
+        </div>
+
+        <div class="contador-item">
+            <strong id="segundos">00</strong>
+            <span>SEGUNDOS</span>
+        </div>
+
+    </div>
+
+    <div class="separador"></div>
+
+    <p class="frase-invitacion">
+        Estamos contando los días<br>
+        para celebrar juntos. 🤍
+    </p>
+
+    <button class="boton-principal" id="verFinal">
+        CONTINUAR
+    </button>
+
+    <button class="boton-regresar" id="volverPase">
+        ← Volver
+    </button>
+
+</section>
+<!-- PANTALLA FINAL -->
+<section id="pantallaFinal" class="pantalla">
+
+    <div class="monograma">
+        <span>M</span>
+    </div>
+
+    <p class="subtitulo">
+        Gracias por acompañarnos
+    </p>
+
+    <h1 class="titulo-final">
+        Gracias
+    </h1>
+
+    <div class="corazon-final">
+        ♡
+    </div>
+
+    <p class="frase-final">
+        Gracias por ser parte<br>
+        de este día tan especial.
+    </p>
+
+    <div class="separador"></div>
+
+    <p class="frase-final pequeña">
+        Con cariño,<br>
+        <strong>Mayra Daniela</strong>
+    </p>
+
+    <button class="boton-principal" id="volverInicio">
+        VOLVER AL INICIO
+    </button>
+
+</section>
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
